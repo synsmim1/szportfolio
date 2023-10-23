@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+    background: rgb(245, 242, 243);
+}
+html{
+	scroll-behavior: smooth;
+}
+.header{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height:auto;
+	display: inline-block;
+	background: rgb(245, 242, 243);
+}
+.header-left{
+	display: inline-block;
+	margin: 10px;
+	margin-left: 25px;
+	align-items: center;
+	justify-content: center;
+	color: grey;
+	padding: 15px;
+}
+.header-left h4{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.header-left h5{
+	font-size: 1.25em;
+	font-weight: 400;
+}
+.header-right{
+	float: right;
+	align-items: center;
+	justify-content: center;
+	margin-right: 80px;
+	margin-top: 15px;
+}
+.header-right ol{
+	list-style-type: none;
+	font-size: 1.25em;
+}
+.header-right ol li a{
+	color: grey;
+	font-weight: 400;
+}
+.header-right ol li a:hover{
+	color: blue;
+	font-weight: 400;
+	font-size: 1.2em;
+}
+.header-image img{
+	max-width: 100%;
+	max-height: auto;
+	padding-top: 1000px;
+}
+#about-me{
+	padding-top: 100px;
+	color: grey;
+	display: inline-block;
+}
+#about-me h1{
+	font-weight: 400;
+	text-align: center;
+	font-size: 5em;
+	padding-bottom: 15px;
+}
+.about-me-contents{
+	display: flex;
+	float: center; 
+	align-items: center;
+	width: 100%
+}
+.about-me-contents img{
+	width: 20%;
+	height: auto;
+	margin-left: 250px;
+}
+.about-me-contents p{
+	display: inline-flex;
+	font-size: 1.5em;
+	margin-right: 110px;
+	margin-left: 50px;
+}
+#skills{
+	color: grey;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 10px;
+	font-size: 1.25em;
+	list-style-type: none;
+}
+#skills h1{
+	font-weight: 400;
+	text-align: center;
+	font-size: 4em;
+	padding-top: 15px;
+}
+#portfolio{
+	padding-top: 80px;
+	align-content: flex-start;
+	display: inline-block;
+	width: 100%;
+}
+#portfolio h1{
+	font-weight: 400;
+	text-align: center;
+	font-size: 3.8em;
+}
+#portfolio h5{
+	font-weight: 100;
+	text-align: center;
+	font-size: 1em;
+}
+.work-links{
+	margin-left: 60px;
+	width: 90%;
+	display: flex;
+}
+.work-links div{
+	border: thick solid white;
+	border-radius: 5%;
+	background: white;
+	display: grid;
+	margin: 10px;
+	gap: 5px;
+	width: 33%;
+}
+.work-links h4{
+	background: white;
+	padding: 5px;
+}
+.work-links p{
+	background: white;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.work-links a{
+	background: white;
+	padding-bottom: 5px;
+}
+.work-links div img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+	height: auto;
+	border-radius: 12%;
+}
+#contact-me{
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+#contact-me p{
+	font-size: 1.5rem;
+	padding: 5px;
+}
+#contact-me input{
+	background-color: white;
+	padding: 10px;
+}
+textarea{
+	width: 600px;
+	height: 250px;
+	border: 2px solid grey;
+	background-color: white;
+	padding: 10px;
+	color: grey;
+}
+button{
+	background-color: white;
+	padding: 10px;
+	color: grey;
+}
+
+/*css for iphone*/
+@media screen and (max-width: 450px) and (min-width: 320px){
+	body{
+		max-width:320px;
+		width: 375px;
+		padding: 0px;
+	}
+	.header{
+		text-align: left;
+		width: 375px;
+	}
+	.header .header-left{
+		width: 100%;
+		width: 375px;
+	}
+	.header .header-right{
+    	display: none !important;
+	}
+	.header-img{
+		width:375px;
+	}
+	#about-me, #skills{
+		display: inline-block;
+		width: 375px;
+	}
+	#about-me h1{
+		margin: 0 auto;
+	}
+	.about-me-contents{
+		display: inline-block;
+	}
+	.about-me-contents img{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		width: 35%;
+	}
+	.about-me-contents p{
+		text-align: center;
+		margin-left: 30px;
+		margin-right: 25px;
+	}
+	.work-links{
+		width: 365px;
+		margin: 0px;
+		display: block;
+	}
+	.work-links div{
+		width: 97%;
+	}
+	textarea{
+		width: 500px;
+	}
+}
